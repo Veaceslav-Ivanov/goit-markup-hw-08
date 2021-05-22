@@ -1,0 +1,111 @@
+.portfolio {
+  padding: 94px 0;
+}
+
+.portfolio__invisible-title {
+  display: none;
+}
+
+.portfolio__btn-list {
+  display: flex;
+  margin-left: auto;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+
+.portfolio__cursor-btn {
+  display: flex;
+  font-family: var(--main-font);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+  color: var(--title-color);
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  margin: auto;
+  padding: 6px 22px;
+  margin-right: 8px;
+  background: #f5f4fa;
+  transition: var(--btn-sh-duration) var(--btn-sh-function);
+
+  &:hover,
+  &:focus {
+    background: var(--accent-color);
+    color: var(--text-color-white);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+}
+
+.portfolio__projects-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
+}
+
+.portfolio__card {
+  flex-basis: calc(100% / 3 - 30px);
+  margin: 15px;
+}
+
+.portfolio__project-name {
+  font-family: var(--main-font);
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--title-color);
+}
+
+.portfolio__project-type {
+  font-family: var(--main-font);
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+  color: var(--main-text-color);
+}
+
+.portfolio__link {
+  display: block;
+
+  &:hover,
+  &:focus {
+    box-shadow: var(--modal-win-box-shadow);
+  }
+}
+
+.portfolio__overlay-card {
+  overflow: hidden;
+  position: relative;
+}
+
+.portfolio__text-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+  color: var(--text-color-white);
+  background: rgba(33, 150, 243, 0.9);
+  transform: translateY(100%);
+  transition: var(--btn-sh-duration) var(--btn-sh-function);
+  overflow: hidden;
+  padding: 63px 24px;
+
+  .portfolio__link:hover & {
+    transform: translateY(0);
+  }
+}
+
+.portfolio__thumb-card {
+  background: var(--modal-win-bg-cl);
+  border: 1px solid #eeeeee;
+  padding: 20px 24px;
+}

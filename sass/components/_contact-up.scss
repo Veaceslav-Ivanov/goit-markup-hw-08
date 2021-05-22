@@ -1,0 +1,44 @@
+.contact {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.contact__email-icon {
+  width: 16px;
+  height: 12px;
+  fill: currentColor;
+  margin-right: 10px;
+}
+
+.contact__smartphone-icon {
+  width: 10px;
+  height: 16px;
+  fill: currentColor;
+  margin-right: 10px;
+}
+
+.contact__email-up {
+  margin-right: 50px;
+  margin-left: 0px;
+}
+
+.contact__link-up {
+  display: flex;
+  align-items: center;
+}
+
+.contact__link-up {
+  font-family: var(--main-font);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--main-text);
+  transition: var(--btn-sh-duration) var(--btn-sh-function);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}

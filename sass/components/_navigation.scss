@@ -1,8 +1,15 @@
 .navigation {
   display: flex;
-  margin-left: auto;
-  justify-content: center;
-  flex-wrap: wrap;
+  // margin-left: auto;
+  // justify-content: center;
+  // flex-wrap: wrap;
+}
+
+.page__nav {
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
 }
 
 .navigation__link {
@@ -56,5 +63,15 @@
   &:hover::after,
   &:focus::after {
     opacity: 0;
+  }
+}
+
+.navigation-mobil__btn {
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  @media screen and (min-width: 768px) {
+    display: none;
   }
 }

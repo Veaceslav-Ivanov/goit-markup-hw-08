@@ -3,6 +3,7 @@
 *::after {
   margin: 0;
   padding: 0;
+  // outline: 1px solid red;
 }
 
 ul {
@@ -15,7 +16,7 @@ a {
 
 img {
   display: block;
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 

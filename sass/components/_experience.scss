@@ -1,5 +1,11 @@
 .experience {
-  padding: 94px 0;
+  @media screen and (max-width: 1199.98px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin: 94px 0;
+  }
 }
 
 .experience__title {

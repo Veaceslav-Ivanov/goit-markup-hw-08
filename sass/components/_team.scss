@@ -44,7 +44,7 @@
 .team__card {
   flex-basis: 100%;
   text-align: center;
-  // margin: 15px;
+
   @media screen and (min-width: 480px) and (max-width: 767.98px) {
     &:not(:last-child) {
       margin-bottom: 30px;
@@ -60,13 +60,6 @@
     flex-basis: calc((100% - 4 * 30px) / 4);
     margin: 0 15px;
   }
-
-  // @media screen and (min-width: 1200px) {
-  //   flex-basis: calc((100% - 4 * 30px) / 4);
-  //   &:not(:last-child) {
-  //     margin-right: 30px;
-  //   }
-  // }
 }
 
 .team__name {

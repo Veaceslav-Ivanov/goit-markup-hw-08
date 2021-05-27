@@ -88,10 +88,16 @@ body {
 }
 
 .page-header {
-  padding: 24px 0px 25px 0px;
+  padding: 21px 0;
   border-bottom: 1px solid #ececec;
   position: relative;
   overflow: hidden;
+}
+
+@media screen and (min-width: 1200px) {
+  .page-header {
+    padding: 24px 0 25px 0;
+  }
 }
 
 .page-header__container {
@@ -197,12 +203,14 @@ body {
   height: 4px;
   background: #2196f3;
   border-radius: 2px;
-  margin-top: 25px;
+  margin-top: 26px;
   transition: var(--btn-sh-duration) var(--btn-sh-function);
 }
 
-.navigation__sdudio::after:hover::after, .navigation__sdudio::after:focus::after {
-  opacity: 0;
+@media screen and (min-width: 1200px) {
+  .navigation__sdudio::after {
+    margin-top: 24px;
+  }
 }
 
 .navigation__portfolio::after {
@@ -213,12 +221,14 @@ body {
   height: 4px;
   background: #2196f3;
   border-radius: 2px;
-  margin-top: 25px;
+  margin-top: 26px;
   transition: var(--btn-sh-duration) var(--btn-sh-function);
 }
 
-.navigation__portfolio::after:hover::after, .navigation__portfolio::after:focus::after {
-  opacity: 0;
+@media screen and (min-width: 1200px) {
+  .navigation__portfolio::after {
+    margin-top: 24px;
+  }
 }
 
 .navigation-mobil__btn {
@@ -338,6 +348,21 @@ body {
   background-color: var(--dark-bg-color);
 }
 
+@media screen and (min-width: 768px) {
+  .footer__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: baseline;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__container {
+    justify-content: space-between;
+  }
+}
+
 @media screen and (max-width: 1199.98px) {
   .footer-box {
     text-align: center;
@@ -350,12 +375,10 @@ body {
   }
 }
 
-@media screen and (min-width: 768px) {
-  .footer__container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: baseline;
+@media screen and (min-width: 1200px) {
+  .footer-box {
+    margin-bottom: 60px;
+    justify-content: space-between;
   }
 }
 
@@ -869,7 +892,6 @@ body {
 }
 
 .advantages__list {
-  margin: -15px;
   margin: auto;
 }
 
@@ -878,6 +900,11 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .advantages__list {
     margin: -15px;
   }
 }
@@ -895,7 +922,7 @@ body {
 @media screen and (min-width: 768px) and (max-width: 1199.98px) {
   .item {
     flex-basis: calc((100% - 2 * 30px) / 2);
-    width: 354px;
+    max-width: 354px;
     margin: 15px;
   }
 }
@@ -903,10 +930,7 @@ body {
 @media screen and (min-width: 1200px) {
   .item {
     flex-basis: calc((100% - 4 * 30px) / 4);
-    width: 270px;
-  }
-  .item:not(:last-child) {
-    margin-right: 30px;
+    margin: 0 15px;
   }
 }
 
@@ -1016,8 +1040,10 @@ body {
   height: 70px;
 }
 
-.team__box {
-  margin: -15px;
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .team__box {
+    margin: -15px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -1029,24 +1055,50 @@ body {
 
 .team {
   background-color: var(--light-bg-color);
-  padding-top: 94px;
-  padding-bottom: 94px;
+}
+
+@media screen and (max-width: 1199.98px) {
+  .team {
+    padding: 60px 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team {
+    padding: 94px 0px;
+  }
 }
 
 .team__title {
   font-family: var(--main-font);
   font-weight: bold;
-  font-size: 36px;
-  line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-color);
-  margin-bottom: 50px;
+}
+
+@media screen and (max-width: 1199.98px) {
+  .team__title {
+    font-size: 28px;
+    line-height: 1.18;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team__title {
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--title-color);
+    margin-bottom: 50px;
+  }
 }
 
 .team__card {
+  flex-basis: 100%;
   text-align: center;
-  margin: 15px;
 }
 
 @media screen and (min-width: 480px) and (max-width: 767.98px) {
@@ -1065,7 +1117,7 @@ body {
 @media screen and (min-width: 1200px) {
   .team__card {
     flex-basis: calc((100% - 4 * 30px) / 4);
-    margin: 15px;
+    margin: 0 15px;
   }
 }
 
@@ -1131,23 +1183,16 @@ body {
   fill: currentColor;
 }
 
-.clients {
-  padding: 94px 0px;
+@media screen and (max-width: 1199.98px) {
+  .clients {
+    padding: 60px 0;
+  }
 }
 
-.clients__title {
-  font-family: var(--main-font);
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 1.16;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--title-color);
-  margin-bottom: 50px;
-}
-
-.client__icon-size {
-  fill: currentColor;
+@media screen and (min-width: 1200px) {
+  .clients {
+    padding: 94px 0px;
+  }
 }
 
 .clients__list {
@@ -1156,16 +1201,69 @@ body {
   justify-content: center;
 }
 
+@media screen and (min-width: 480px) and (max-width: 1199.98px) {
+  .clients__list {
+    margin: -15px;
+  }
+}
+
 .clients__item {
-  width: 170px;
+  margin: 15px;
+  text-align: center;
 }
 
-.clients__list .clients__item:not(:first-child) {
-  margin-left: 0px;
+@media screen and (max-width: 767.98px) {
+  .clients__item {
+    flex-basis: calc((100% - 2 * 30px) / 2);
+    width: 210px;
+  }
+  .clients__item:not(:last-child) {
+    margin-bottom: 15px;
+  }
 }
 
-.clients__list .clients__item:not(:last-child) {
-  margin-right: 30px;
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .clients__item {
+    flex-basis: calc((100% - 3 * 30px) / 3);
+    width: 226px;
+    margin: 15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .clients__item {
+    flex-basis: calc((100% - 6 * 30px) / 6);
+    width: 170px;
+    margin: 0 15px;
+  }
+}
+
+.clients__title {
+  font-family: var(--main-font);
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-color);
+}
+
+@media screen and (max-width: 1199.98px) {
+  .clients__title {
+    font-size: 28px;
+    line-height: 1.18;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .clients__title {
+    font-size: 36px;
+    line-height: 1.16;
+    margin-bottom: 50px;
+  }
+}
+
+.client__icon-size {
+  fill: currentColor;
 }
 
 .clients__link {

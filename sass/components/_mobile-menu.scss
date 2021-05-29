@@ -127,13 +127,14 @@
 
   &:hover,
   &:focus {
+    // transform: scale(1.2);
     font-style: normal;
     font-weight: 500;
     font-size: 34px;
     line-height: 1.67;
     letter-spacing: 0.02em;
     color: var(--accent-color);
-    // transform: font-size 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    // transform: font-size 250ms cubic-bezier(0.4, 0, 0.2, 1),
     //   line-height 250ms cubic-bezier(0.4, 0, 0.2, 1),
     //   color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
@@ -178,7 +179,7 @@
 }
 
 .mobile-menu__contacts-down {
-  margin-top: 330px;
+  margin-top: 300px;
 }
 
 .mobile-menu__social-down {

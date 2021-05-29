@@ -68,28 +68,3 @@
     margin-top: 24px;
   }
 }
-
-.navigation-mobil__btn {
-  right: 23px;
-  top: 22px;
-  padding: 0;
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-  @media screen and (min-width: 768px) {
-    display: none;
-  }
-}
-
-.mobile-menu__close-btn {
-  position: absolute;
-  right: 23px;
-  top: 22px;
-  padding: 0;
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-  @media screen and (min-width: 768px) {
-    display: none;
-  }
-}

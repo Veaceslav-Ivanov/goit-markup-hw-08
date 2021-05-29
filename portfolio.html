@@ -61,68 +61,69 @@
             </a>
           </li>
         </ul>
-        <button class="navigation-mobil__btn" data-menu-button>
-          <svg width="24" height="16">
+        <button class="mobile-menu__btn" data-menu-button>
+          <svg class="mobile-menu__icon-menu" width="24" height="16">
             <use href="./images/svg-sprite.svg#menu"></use>
           </svg>
         </button>
       </div>
-      <div class="mobile-menu" data-menu>
+      <div class="mobile-menu__box" data-menu>
         <button type="button" class="mobile-menu__close-btn" data-menu-close>
           <svg class="mobile-menu__icon-cross" width="20" height="20">
             <use href="./images/symbol-defs.svg#cross"></use>
           </svg>
         </button>
-        <ul class="mobile-menu__nav list">
+        <ul class="mobile-menu__nav-list">
           <li class="mobile-menu__item">
-            <a href="./index.html" class="mobile-menu__link link active-page"
+            <a href="./index.html" class="mobile-menu__link active-page"
               >Студия</a
             >
           </li>
           <li class="mobile-menu__item">
-            <a href="./portfolio.html" class="mobile-menu__link link"
+            <a
+              href="./portfolio.html"
+              class="mobile-menu__link mobile-menu__link--current"
               >Портфолио</a
             >
           </li>
           <li class="mobile-menu__item">
-            <a href="" class="mobile-menu__link link">Контакты</a>
+            <a href="" class="mobile-menu__link">Контакты</a>
           </li>
         </ul>
 
-        <ul class="mobile-menu__contacts list">
-          <li class="mobile-menu__item">
-            <a
-              href="tel:+380961111111"
-              class="
-                mobile-menu__link-contact mobile-menu__link-contact--bigger
-                link
-              "
-              >+38 096 111 11 11</a
-            >
-          </li>
-          <li class="mobile-menu__item">
-            <a
-              href="mailto:info@devstudio.com"
-              class="mobile-menu__link-contact link"
-              >info@devstudio.com</a
-            >
-          </li>
-        </ul>
+        <div class="mobile-menu__contacts-down">
+          <ul class="mobile-menu__contacts list">
+            <li class="mobile-menu__contacts-item">
+              <a href="tel:+380961111111" class="mobile-menu__contacts-link"
+                >+38 096 111 11 11</a
+              >
+            </li>
+            <li class="mobile-menu__contacts-item">
+              <a
+                href="mailto:info@devstudio.com"
+                class="mobile-menu__contacts-link"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+        </div>
 
-        <ul class="mobile-menu__social list">
-          <li class="mobile-menu__item-soc">
-            <a href="" class="mobile-menu__social-link link">Instagram</a>
-          </li>
-          <li class="mobile-menu__item-soc">
-            <a href="" class="mobile-menu__social-link link">Twitter</a>
-          </li>
-          <li class="mobile-menu__item-soc">
-            <a href="" class="mobile-menu__social-link link">Facebook</a>
-          </li>
-          <li class="mobile-menu__item-soc">
-            <a href="" class="mobile-menu__social-link link">LinkedIn</a>
-          </li>
-        </ul>
+        <div class="mobile-menu__social-down">
+          <ul class="mobile-menu__social">
+            <li class="mobile-menu__social-item">
+              <a href="" class="mobile-menu__social-link">Instagram</a>
+            </li>
+            <li class="mobile-menu__social-item">
+              <a href="" class="mobile-menu__social-link">Twitter</a>
+            </li>
+            <li class="mobile-menu__social-item">
+              <a href="" class="mobile-menu__social-link">Facebook</a>
+            </li>
+            <li class="mobile-menu__social-item">
+              <a href="" class="mobile-menu__social-link">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
 

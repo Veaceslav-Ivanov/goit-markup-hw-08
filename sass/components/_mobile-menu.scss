@@ -16,6 +16,7 @@
 }
 
 .mobile-menu__box.is-open {
+  display: flex;
   position: fixed;
   flex-direction: column;
   justify-content: space-between;
@@ -127,7 +128,6 @@
 
   &:hover,
   &:focus {
-    // transform: scale(1.2);
     font-style: normal;
     font-weight: 500;
     font-size: 34px;
@@ -151,11 +151,6 @@
   padding-left: 0;
 }
 
-// .mobile-menu__social-item {
-//   margin-right: 10px;
-//   //   margin-bottom: 10px;
-// }
-
 .mobile-menu__social-link {
   font-style: normal;
   font-weight: 500;
@@ -176,12 +171,4 @@
   transform: rotate(90deg);
   margin-left: 10px;
   margin-right: 10px;
-}
-
-.mobile-menu__contacts-down {
-  margin-top: 300px;
-}
-
-.mobile-menu__social-down {
-  padding-bottom: 0;
 }

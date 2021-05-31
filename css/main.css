@@ -91,6 +91,7 @@ body {
   padding: 21px 0;
   border-bottom: 1px solid #ececec;
   position: relative;
+  overflow: hidden;
 }
 
 @media screen and (min-width: 1200px) {
@@ -1251,7 +1252,7 @@ body {
   text-align: center;
 }
 
-@media screen and (min-width: 480px) and (max-width: 767.98px) {
+@media screen and (max-width: 767.98px) {
   .team__card:not(:last-child) {
     margin-bottom: 30px;
   }

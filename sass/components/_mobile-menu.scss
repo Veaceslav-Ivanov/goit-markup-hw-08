@@ -6,7 +6,7 @@
   height: 100vh;
   background-color: var(--modal-win-bg-cl);
   padding: 48px 40px;
-  z-index: 98;
+  z-index: 90;
   transform: translateX(100%);
   transition: transform var(--btn-sh-duration) var(--btn-sh-function);
 
@@ -160,7 +160,7 @@
   color: var(--accent-color);
 }
 
-.mobile-menu__social-item::after {
+.mobile-menu__social-item:not(:last-child)::after {
   content: "";
   //   position: absolute;
   width: 22px;
@@ -171,4 +171,5 @@
   transform: rotate(90deg);
   margin-left: 10px;
   margin-right: 10px;
+
 }
